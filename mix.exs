@@ -39,8 +39,12 @@ defmodule Scaffolder.MixProject do
   defp package() do
     [
       # These are the default files included in the package
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src),
+      files: [
+        "lib",
+        "mix.exs",
+        "README.md",
+        ".formatter.exs"
+      ],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/abiwinanda/scaffolder"}
     ]
